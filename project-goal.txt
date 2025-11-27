@@ -1,0 +1,6 @@
+I want to create a google chrome extension which will:
+1. Scrape real estate information (description, properties, images, etc.) from provided link
+2. Save it somewhere.
+3. Upload all those information to other website.
+
+Everything should be automatized.

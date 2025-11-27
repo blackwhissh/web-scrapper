@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Real Estate Automation",
+  "version": "0.1.0",
+  "description": "Scrape real estate data from listings and autofill target forms.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["mappings.csv"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
