@@ -1,0 +1,216 @@
+{
+  "mappings": [
+    {
+      "myhome_id": 114,
+      "myhome_display_name": "ასხინის ქ.",
+      "myhome_canonical": "ასხინის",
+      "ss_streetId": 430,
+      "ss_streetTitle": "ასხინის ქ.",
+      "ss_canonical": "ასხინის",
+      "ss_districtTitle": "გლდანი-ნაძალადევი",
+      "ss_subDistrictTitle": "ნაძალადევი"
+    },
+    {
+      "myhome_id": 2898,
+      "myhome_display_name": "ასმათის ქ.",
+      "myhome_canonical": "ასმათის",
+      "ss_streetId": 1200,
+      "ss_streetTitle": "ასმათის ქ.",
+      "ss_canonical": "ასმათის",
+      "ss_districtTitle": "ვაკე-საბურთალო",
+      "ss_subDistrictTitle": "დიდი დიღომი"
+    },
+    {
+      "myhome_id": 109,
+      "myhome_display_name": "ასპინძის I ქ.",
+      "myhome_canonical": "ასპინძის",
+      "ss_streetId": 1131,
+      "ss_streetTitle": "ასპინძის ქ.",
+      "ss_canonical": "ასპინძის",
+      "ss_districtTitle": "დიდუბე-ჩუღურეთი",
+      "ss_subDistrictTitle": "სვანეთის უბანი"
+    },
+    {
+      "myhome_id": 103,
+      "myhome_display_name": "ასკანის I ჩიხი",
+      "myhome_canonical": "ასკანის",
+      "ss_streetId": 1032,
+      "ss_streetTitle": "ასკანის ქ.",
+      "ss_canonical": "ასკანის",
+      "ss_districtTitle": "ძველი თბილისი",
+      "ss_subDistrictTitle": "სოლოლაკი"
+    },
+    {
+      "myhome_id": 104,
+      "myhome_display_name": "ასკანის II ჩიხი",
+      "myhome_canonical": "ასკანის",
+      "ss_streetId": 1032,
+      "ss_streetTitle": "ასკანის ქ.",
+      "ss_canonical": "ასკანის",
+      "ss_districtTitle": "ძველი თბილისი",
+      "ss_subDistrictTitle": "სოლოლაკი"
+    },
+    {
+      "myhome_id": 106,
+      "myhome_display_name": "ასკანის IV ჩიხი",
+      "myhome_canonical": "ასკანის",
+      "ss_streetId": 1032,
+      "ss_streetTitle": "ასკანის ქ.",
+      "ss_canonical": "ასკანის",
+      "ss_districtTitle": "ძველი თბილისი",
+      "ss_subDistrictTitle": "სოლოლაკი"
+    },
+    {
+      "myhome_id": 105,
+      "myhome_display_name": "ასკანის III ჩიხი",
+      "myhome_canonical": "ასკანის",
+      "ss_streetId": 1032,
+      "ss_streetTitle": "ასკანის ქ.",
+      "ss_canonical": "ასკანის",
+      "ss_districtTitle": "ძველი თბილისი",
+      "ss_subDistrictTitle": "სოლოლაკი"
+    },
+    {
+      "myhome_id": 101,
+      "myhome_display_name": "ასკანის ქ.",
+      "myhome_canonical": "ასკანის",
+      "ss_streetId": 1032,
+      "ss_streetTitle": "ასკანის ქ.",
+      "ss_canonical": "ასკანის",
+      "ss_districtTitle": "ძველი თბილისი",
+      "ss_subDistrictTitle": "სოლოლაკი"
+    },
+    {
+      "myhome_id": 4757,
+      "myhome_display_name": "13 ასურელი მამის ქ.",
+      "myhome_canonical": "13 ასურელი მამის",
+      "ss_streetId": 1293,
+      "ss_streetTitle": "13 ასურელი მამის ქ.",
+      "ss_canonical": "13 ასურელი მამის",
+      "ss_districtTitle": "ვაკე-საბურთალო",
+      "ss_subDistrictTitle": "დიდი დიღომი"
+    },
+    {
+      "myhome_id": 112,
+      "myhome_display_name": "ასურეთის ქ.",
+      "myhome_canonical": "ასურეთის",
+      "ss_streetId": 429,
+      "ss_streetTitle": "ასურეთის ქ.",
+      "ss_canonical": "ასურეთის",
+      "ss_districtTitle": "გლდანი-ნაძალადევი",
+      "ss_subDistrictTitle": "ნაძალადევი"
+    },
+    {
+      "myhome_id": 108,
+      "myhome_display_name": "ასპინძის ქ.",
+      "myhome_canonical": "ასპინძის",
+      "ss_streetId": 1131,
+      "ss_streetTitle": "ასპინძის ქ.",
+      "ss_canonical": "ასპინძის",
+      "ss_districtTitle": "დიდუბე-ჩუღურეთი",
+      "ss_subDistrictTitle": "სვანეთის უბანი"
+    },
+    {
+      "myhome_id": 110,
+      "myhome_display_name": "ასპინძის II ქ.",
+      "myhome_canonical": "ასპინძის",
+      "ss_streetId": 1131,
+      "ss_streetTitle": "ასპინძის ქ.",
+      "ss_canonical": "ასპინძის",
+      "ss_districtTitle": "დიდუბე-ჩუღურეთი",
+      "ss_subDistrictTitle": "სვანეთის უბანი"
+    },
+    {
+      "myhome_id": 7792,
+      "myhome_display_name": "ასი ათასი მოწამის ქ.",
+      "myhome_canonical": "ასი ათასი მოწამის",
+      "ss_streetId": 1325,
+      "ss_streetTitle": "ასი ათასი მოწამის ქ.",
+      "ss_canonical": "ასი ათასი მოწამის",
+      "ss_districtTitle": "ვაკე-საბურთალო",
+      "ss_subDistrictTitle": "დიდი დიღომი"
+    }
+  ],
+  "unmatched": [
+    {
+      "myhome_id": 8283,
+      "display_name": "ასათიანი ლ. ქ.",
+      "canonical": "ასათიანი ლ."
+    },
+    {
+      "myhome_id": 11865,
+      "display_name": "ასათიანი გ. ქ.",
+      "canonical": "ასათიანი გ."
+    },
+    {
+      "myhome_id": 102,
+      "display_name": "ასკანის შესახვევი",
+      "canonical": "ასკანის შესახვევი"
+    },
+    {
+      "myhome_id": 5121,
+      "display_name": "ი. ასლანიშვილის ქ.",
+      "canonical": "ი. ასლანიშვილის"
+    },
+    {
+      "myhome_id": 97,
+      "display_name": "ასათიანი ლ. I შეს.",
+      "canonical": "ასათიანი ლ. შეს"
+    },
+    {
+      "myhome_id": 99,
+      "display_name": "ასათიანი ლ. I ჩიხ.",
+      "canonical": "ასათიანი ლ. i ჩიხ"
+    },
+    {
+      "myhome_id": 11866,
+      "display_name": "ასათიანი გ. I შეს.",
+      "canonical": "ასათიანი გ. შეს"
+    },
+    {
+      "myhome_id": 98,
+      "display_name": "ასათიანი ლ. II შეს.",
+      "canonical": "ასათიანი ლ. შეს"
+    },
+    {
+      "myhome_id": 11867,
+      "display_name": "ასათიანი გ. II შეს.",
+      "canonical": "ასათიანი გ. შეს"
+    },
+    {
+      "myhome_id": 113,
+      "display_name": "ასურეთის შესახვევი",
+      "canonical": "ასურეთის შესახვევი"
+    },
+    {
+      "myhome_id": 111,
+      "display_name": "ასპინძის შესახვევი",
+      "canonical": "ასპინძის შესახვევი"
+    },
+    {
+      "myhome_id": 4818,
+      "display_name": "13 ასურელი მამის I შეს.",
+      "canonical": "13 ასურელი მამის შეს"
+    },
+    {
+      "myhome_id": 5754,
+      "display_name": "13 ასურელი მამის II შეს.",
+      "canonical": "13 ასურელი მამის შეს"
+    },
+    {
+      "myhome_id": 96,
+      "display_name": "ლადო ასათიანის ქ.",
+      "canonical": "ლადო ასათიანის"
+    },
+    {
+      "myhome_id": 107,
+      "display_name": "პავლე ასლანიდის ქ.",
+      "canonical": "პავლე ასლანიდის"
+    },
+    {
+      "myhome_id": 100,
+      "display_name": "მიხეილ ასათიანის ქ.",
+      "canonical": "მიხეილ ასათიანის"
+    }
+  ]
+}

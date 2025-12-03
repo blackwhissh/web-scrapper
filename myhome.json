@@ -1,0 +1,1221 @@
+{
+    "result": true,
+    "data": [
+        {
+            "id": 114,
+            "urban_id": 25,
+            "district_id": 3,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d9\u10e3\u10d9\u10d8\u10d0",
+            "district_name": "\u10d3\u10d8\u10d3\u10e3\u10d1\u10d4-\u10e9\u10e3\u10e6\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10ee\u10d8\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10ee\u10d8\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.81683,
+            "latitude": 41.716144,
+            "metro_stations": []
+        },
+        {
+            "id": 2898,
+            "urban_id": 29,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d3\u10d8\u10d3\u10d8 \u10d3\u10d8\u10e6\u10dd\u10db\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "\u10d0\u10e1\u10db\u10d0\u10d7\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10db\u10d0\u10d7\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.752108,
+            "latitude": 41.785057,
+            "metro_stations": []
+        },
+        {
+            "id": 109,
+            "urban_id": 26,
+            "district_id": 3,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d5\u10d0\u10dc\u10d4\u10d7\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d3\u10d8\u10d3\u10e3\u10d1\u10d4-\u10e9\u10e3\u10e6\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 I \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 I \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.814832,
+            "latitude": 41.707384,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 15,
+                    "display_name": "\u10db\u10d0\u10e0\u10ef\u10d0\u10dc\u10d8\u10e8\u10d5\u10d8\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 8283,
+            "urban_id": 46,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10dc\u10e3\u10ea\u10e3\u10d1\u10d8\u10eb\u10d8\u10e1 \u10e4\u10d4\u10e0\u10d3\u10dd\u10d1\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. \u10e5.",
+            "search_display_name": "Levan Asatiani St",
+            "longitude": 44.733677,
+            "latitude": 41.735188,
+            "metro_stations": [
+                {
+                    "id": 1,
+                    "display_name": "\u10e1\u10d0\u10ee\u10d4\u10da\u10db\u10ec\u10d8\u10e4\u10dd \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                },
+                {
+                    "id": 2,
+                    "display_name": "\u10d5\u10d0\u10df\u10d0-\u10e4\u10e8\u10d0\u10d5\u10d4\u10da\u10d0"
+                },
+                {
+                    "id": 3,
+                    "display_name": "\u10d3\u10d4\u10da\u10d8\u10e1\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 11865,
+            "urban_id": 10,
+            "district_id": 1,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "district_name": "\u10d2\u10da\u10d3\u10d0\u10dc\u10d8-\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10d2. \u10e5.",
+            "search_display_name": "Guram Asatiani St",
+            "longitude": 44.804612,
+            "latitude": 41.725906,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 16,
+                    "display_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8"
+                },
+                {
+                    "id": 17,
+                    "display_name": "\u10d2\u10dd\u10ea\u10d8\u10e0\u10d8\u10eb\u10d4"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 I \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 I \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 44.805223,
+            "latitude": 41.689876,
+            "metro_stations": []
+        },
+        {
+            "id": 102,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 44.805777,
+            "latitude": 41.68926,
+            "metro_stations": []
+        },
+        {
+            "id": 104,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 II \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 II \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 44.805028,
+            "latitude": 41.689436,
+            "metro_stations": []
+        },
+        {
+            "id": 106,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 IV \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 IV \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 44.805074,
+            "latitude": 41.688913,
+            "metro_stations": []
+        },
+        {
+            "id": 105,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 III \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 III \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 44.805175,
+            "latitude": 41.689265,
+            "metro_stations": []
+        },
+        {
+            "id": 5121,
+            "urban_id": 54,
+            "district_id": 5,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10da\u10d8\u10da\u10dd",
+            "district_name": "\u10d8\u10e1\u10d0\u10dc\u10d8-\u10e1\u10d0\u10db\u10d2\u10dd\u10e0\u10d8",
+            "display_name": "\u10d8. \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Ioseb Aslanishvili St",
+            "longitude": 44.98845,
+            "latitude": 41.694577,
+            "metro_stations": []
+        },
+        {
+            "id": 97,
+            "urban_id": 67,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10dd\u10da\u10dd\u10da\u10d0\u10d9\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. I \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 44.80438,
+            "latitude": 41.689708,
+            "metro_stations": [
+                {
+                    "id": 13,
+                    "display_name": "\u10d7\u10d0\u10d5\u10d8\u10e1\u10e3\u10e4\u10da\u10d4\u10d1\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 14,
+                    "display_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d4\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 99,
+            "urban_id": 67,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10dd\u10da\u10dd\u10da\u10d0\u10d9\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. I \u10e9\u10d8\u10ee.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 44.765803,
+            "latitude": 41.686526,
+            "metro_stations": [
+                {
+                    "id": 13,
+                    "display_name": "\u10d7\u10d0\u10d5\u10d8\u10e1\u10e3\u10e4\u10da\u10d4\u10d1\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 14,
+                    "display_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d4\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 11866,
+            "urban_id": 10,
+            "district_id": 1,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "district_name": "\u10d2\u10da\u10d3\u10d0\u10dc\u10d8-\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10d2. I \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10d2\u10e3\u10e0\u10d0\u10db \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 44.80667,
+            "latitude": 41.725339,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 16,
+                    "display_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8"
+                },
+                {
+                    "id": 17,
+                    "display_name": "\u10d2\u10dd\u10ea\u10d8\u10e0\u10d8\u10eb\u10d4"
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "urban_id": 67,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10dd\u10da\u10dd\u10da\u10d0\u10d9\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. II \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 II \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 44.795862,
+            "latitude": 41.689672,
+            "metro_stations": [
+                {
+                    "id": 13,
+                    "display_name": "\u10d7\u10d0\u10d5\u10d8\u10e1\u10e3\u10e4\u10da\u10d4\u10d1\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 14,
+                    "display_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d4\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 11867,
+            "urban_id": 10,
+            "district_id": 1,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "district_name": "\u10d2\u10da\u10d3\u10d0\u10dc\u10d8-\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10d2. II \u10e8\u10d4\u10e1.",
+            "search_display_name": "Guram Asatiani II Turn",
+            "longitude": 44.80873,
+            "latitude": 41.725387,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 16,
+                    "display_name": "\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8"
+                },
+                {
+                    "id": 17,
+                    "display_name": "\u10d2\u10dd\u10ea\u10d8\u10e0\u10d8\u10eb\u10d4"
+                }
+            ]
+        },
+        {
+            "id": 101,
+            "urban_id": 61,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d0\u10d1\u10d0\u10dc\u10dd\u10d7\u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d8\u10e1 \u10e5",
+            "longitude": 44.80527,
+            "latitude": 41.688929,
+            "metro_stations": []
+        },
+        {
+            "id": 4757,
+            "urban_id": 29,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d3\u10d8\u10d3\u10d8 \u10d3\u10d8\u10e6\u10dd\u10db\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "13 \u10d0\u10e1\u10e3\u10e0\u10d4\u10da\u10d8 \u10db\u10d0\u10db\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10ea\u10d0\u10db\u10d4\u10e2\u10d8 \u10d0\u10e1\u10e3\u10e0\u10d4\u10da\u10d8 \u10db\u10d0\u10db\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.766684,
+            "latitude": 41.77729,
+            "metro_stations": []
+        },
+        {
+            "id": 112,
+            "urban_id": 8,
+            "district_id": 1,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10da\u10dd\u10e2\u10d9\u10d8\u10dc\u10d8",
+            "district_name": "\u10d2\u10da\u10d3\u10d0\u10dc\u10d8-\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "display_name": "\u10d0\u10e1\u10e3\u10e0\u10d4\u10d7\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Asureti St",
+            "longitude": 44.807691,
+            "latitude": 41.739772,
+            "metro_stations": []
+        },
+        {
+            "id": 108,
+            "urban_id": 26,
+            "district_id": 3,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d5\u10d0\u10dc\u10d4\u10d7\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d3\u10d8\u10d3\u10e3\u10d1\u10d4-\u10e9\u10e3\u10e6\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.813636,
+            "latitude": 41.708125,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 15,
+                    "display_name": "\u10db\u10d0\u10e0\u10ef\u10d0\u10dc\u10d8\u10e8\u10d5\u10d8\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 113,
+            "urban_id": 8,
+            "district_id": 1,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10da\u10dd\u10e2\u10d9\u10d8\u10dc\u10d8",
+            "district_name": "\u10d2\u10da\u10d3\u10d0\u10dc\u10d8-\u10dc\u10d0\u10eb\u10d0\u10da\u10d0\u10d3\u10d4\u10d5\u10d8",
+            "display_name": "\u10d0\u10e1\u10e3\u10e0\u10d4\u10d7\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "search_display_name": "Asureti turn",
+            "longitude": 44.808014,
+            "latitude": 41.740432,
+            "metro_stations": []
+        },
+        {
+            "id": 111,
+            "urban_id": 26,
+            "district_id": 3,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d5\u10d0\u10dc\u10d4\u10d7\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d3\u10d8\u10d3\u10e3\u10d1\u10d4-\u10e9\u10e3\u10e6\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "search_display_name": "Aspindza Turn",
+            "longitude": 44.811261,
+            "latitude": 41.707047,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 15,
+                    "display_name": "\u10db\u10d0\u10e0\u10ef\u10d0\u10dc\u10d8\u10e8\u10d5\u10d8\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 4818,
+            "urban_id": 29,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d3\u10d8\u10d3\u10d8 \u10d3\u10d8\u10e6\u10dd\u10db\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "13 \u10d0\u10e1\u10e3\u10e0\u10d4\u10da\u10d8 \u10db\u10d0\u10db\u10d8\u10e1 I \u10e8\u10d4\u10e1.",
+            "search_display_name": "Tsameti Asureli Mama I Turn",
+            "longitude": 44.739349,
+            "latitude": 41.772922,
+            "metro_stations": []
+        },
+        {
+            "id": 5754,
+            "urban_id": 29,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d3\u10d8\u10d3\u10d8 \u10d3\u10d8\u10e6\u10dd\u10db\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "13 \u10d0\u10e1\u10e3\u10e0\u10d4\u10da\u10d8 \u10db\u10d0\u10db\u10d8\u10e1 II \u10e8\u10d4\u10e1.",
+            "search_display_name": "Tsameti Asureli Mama II Turn",
+            "longitude": 44.737984,
+            "latitude": 41.773865,
+            "metro_stations": []
+        },
+        {
+            "id": 110,
+            "urban_id": 26,
+            "district_id": 3,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d5\u10d0\u10dc\u10d4\u10d7\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d3\u10d8\u10d3\u10e3\u10d1\u10d4-\u10e9\u10e3\u10e6\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 II \u10e5.",
+            "search_display_name": "Aspindza II St",
+            "longitude": 44.815229,
+            "latitude": 41.707399,
+            "metro_stations": [
+                {
+                    "id": 7,
+                    "display_name": "\u10e1\u10d0\u10d3\u10d2\u10e3\u10e0\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 15,
+                    "display_name": "\u10db\u10d0\u10e0\u10ef\u10d0\u10dc\u10d8\u10e8\u10d5\u10d8\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 96,
+            "urban_id": 67,
+            "district_id": 6,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10dd\u10da\u10dd\u10da\u10d0\u10d9\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Lado Asatiani St",
+            "longitude": 44.801095,
+            "latitude": 41.689675,
+            "metro_stations": [
+                {
+                    "id": 13,
+                    "display_name": "\u10d7\u10d0\u10d5\u10d8\u10e1\u10e3\u10e4\u10da\u10d4\u10d1\u10d8\u10e1 \u10db\u10dd\u10d4\u10d3\u10d0\u10dc\u10d8"
+                },
+                {
+                    "id": 14,
+                    "display_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d4\u10da\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 107,
+            "urban_id": 47,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "\u10de\u10d0\u10d5\u10da\u10d4 \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d3\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Pavle Aslanidi St",
+            "longitude": 44.781262,
+            "latitude": 41.718789,
+            "metro_stations": [
+                {
+                    "id": 1,
+                    "display_name": "\u10e1\u10d0\u10ee\u10d4\u10da\u10db\u10ec\u10d8\u10e4\u10dd \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                },
+                {
+                    "id": 2,
+                    "display_name": "\u10d5\u10d0\u10df\u10d0-\u10e4\u10e8\u10d0\u10d5\u10d4\u10da\u10d0"
+                },
+                {
+                    "id": 3,
+                    "display_name": "\u10d3\u10d4\u10da\u10d8\u10e1\u10d8"
+                },
+                {
+                    "id": 4,
+                    "display_name": "\u10e1\u10d0\u10db\u10d4\u10d3\u10d8\u10ea\u10d8\u10dc\u10dd \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                },
+                {
+                    "id": 5,
+                    "display_name": "\u10e2\u10d4\u10e5\u10dc\u10d8\u10d9\u10e3\u10e0\u10d8 \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 100,
+            "urban_id": 47,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "\u10db\u10d8\u10ee\u10d4\u10d8\u10da \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Mikheil Asatiani St",
+            "longitude": 44.750166,
+            "latitude": 41.727119,
+            "metro_stations": [
+                {
+                    "id": 1,
+                    "display_name": "\u10e1\u10d0\u10ee\u10d4\u10da\u10db\u10ec\u10d8\u10e4\u10dd \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                },
+                {
+                    "id": 2,
+                    "display_name": "\u10d5\u10d0\u10df\u10d0-\u10e4\u10e8\u10d0\u10d5\u10d4\u10da\u10d0"
+                },
+                {
+                    "id": 3,
+                    "display_name": "\u10d3\u10d4\u10da\u10d8\u10e1\u10d8"
+                },
+                {
+                    "id": 4,
+                    "display_name": "\u10e1\u10d0\u10db\u10d4\u10d3\u10d8\u10ea\u10d8\u10dc\u10dd \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                },
+                {
+                    "id": 5,
+                    "display_name": "\u10e2\u10d4\u10e5\u10dc\u10d8\u10d9\u10e3\u10e0\u10d8 \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8"
+                }
+            ]
+        },
+        {
+            "id": 7792,
+            "urban_id": 29,
+            "district_id": 4,
+            "city_id": 1,
+            "city_name": "\u10d7\u10d1\u10d8\u10da\u10d8\u10e1\u10d8",
+            "urban_name": "\u10d3\u10d8\u10d3\u10d8 \u10d3\u10d8\u10e6\u10dd\u10db\u10d8",
+            "district_name": "\u10d5\u10d0\u10d9\u10d4-\u10e1\u10d0\u10d1\u10e3\u10e0\u10d7\u10d0\u10da\u10dd",
+            "display_name": "\u10d0\u10e1\u10d8 \u10d0\u10d7\u10d0\u10e1\u10d8 \u10db\u10dd\u10ec\u10d0\u10db\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Asi Atasi Motsame St",
+            "longitude": 44.757637,
+            "latitude": 41.797482,
+            "metro_stations": []
+        },
+        {
+            "id": 4300,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. \u10e5.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 41.640078,
+            "latitude": 41.635501,
+            "metro_stations": []
+        },
+        {
+            "id": 3558,
+            "urban_id": 73,
+            "district_id": 9,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10d1\u10d0\u10d2\u10e0\u10d0\u10e2\u10d8\u10dd\u10dc\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d1\u10d0\u10d2\u10e0\u10d0\u10e2\u10d8\u10dd\u10dc\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "Luka Asatiani St",
+            "longitude": 41.63915,
+            "latitude": 41.642014,
+            "metro_stations": []
+        },
+        {
+            "id": 4301,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. I \u10e9\u10d8\u10ee.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 41.639534,
+            "latitude": 41.634882,
+            "metro_stations": []
+        },
+        {
+            "id": 4302,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. I \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 41.636653,
+            "latitude": 41.636022,
+            "metro_stations": []
+        },
+        {
+            "id": 4303,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. II \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 II \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 41.636171,
+            "latitude": 41.635752,
+            "metro_stations": []
+        },
+        {
+            "id": 4304,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. III \u10e8\u10d4\u10e1.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 III \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "longitude": 41.634766,
+            "latitude": 41.635526,
+            "metro_stations": []
+        },
+        {
+            "id": 4310,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8",
+            "search_display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e8\u10d4\u10e1\u10d0\u10ee\u10d5\u10d4\u10d5\u10d8  ",
+            "longitude": 41.642446,
+            "latitude": 41.63496,
+            "metro_stations": []
+        },
+        {
+            "id": 4186,
+            "urban_id": 71,
+            "district_id": 7,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d1\u10d0\u10d7\u10e3\u10db\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10eb\u10d5\u10d4\u10da\u10d8 \u10d1\u10d0\u10d7\u10e3\u10db\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0 (1-58)",
+            "search_display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0  ",
+            "longitude": 41.632858,
+            "latitude": 41.650956,
+            "metro_stations": []
+        },
+        {
+            "id": 4187,
+            "urban_id": 73,
+            "district_id": 9,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10d1\u10d0\u10d2\u10e0\u10d0\u10e2\u10d8\u10dd\u10dc\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10d1\u10d0\u10d2\u10e0\u10d0\u10e2\u10d8\u10dd\u10dc\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0 (58-161)",
+            "search_display_name": "\u10da\u10e3\u10d9\u10d0 \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0  ",
+            "longitude": 41.640711,
+            "latitude": 41.638866,
+            "metro_stations": []
+        },
+        {
+            "id": 4279,
+            "urban_id": 76,
+            "district_id": 13,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ee\u10d8\u10db\u10e8\u10d8\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ee\u10d8\u10db\u10e8\u10d8\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d2\u10d4\u10dc\u10d4\u10e0\u10d0\u10da \u10d0\u10e1\u10da\u10d0\u10dc \u10d0\u10d1\u10d0\u10e8\u10d8\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0 (1-22)",
+            "search_display_name": "\u10d2\u10d4\u10dc\u10d4\u10e0\u10d0\u10da \u10d0\u10e1\u10da\u10d0\u10dc \u10d0\u10d1\u10d0\u10e8\u10d8\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 41.625789,
+            "latitude": 41.62938,
+            "metro_stations": []
+        },
+        {
+            "id": 4280,
+            "urban_id": 75,
+            "district_id": 11,
+            "city_id": 15,
+            "city_name": "\u10d1\u10d0\u10d7\u10e3\u10db\u10d8",
+            "urban_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "district_name": "\u10ef\u10d0\u10d5\u10d0\u10ee\u10d8\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e3\u10d1\u10d0\u10dc\u10d8",
+            "display_name": "\u10d2\u10d4\u10dc\u10d4\u10e0\u10d0\u10da \u10d0\u10e1\u10da\u10d0\u10dc \u10d0\u10d1\u10d0\u10e8\u10d8\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0 (22-78)",
+            "search_display_name": "\u10d2\u10d4\u10dc\u10d4\u10e0\u10d0\u10da \u10d0\u10e1\u10da\u10d0\u10dc \u10d0\u10d1\u10d0\u10e8\u10d8\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 41.62585,
+            "latitude": 41.629222,
+            "metro_stations": []
+        },
+        {
+            "id": 3871,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. \u10e5.",
+            "search_display_name": "Lado Asatiani Street",
+            "longitude": 42.697809,
+            "latitude": 42.259228,
+            "metro_stations": []
+        },
+        {
+            "id": 3878,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 V \u10e8\u10d4\u10e1.",
+            "search_display_name": "Asatiani Street V shes.",
+            "longitude": 42.698011,
+            "latitude": 42.256447,
+            "metro_stations": []
+        },
+        {
+            "id": 3874,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 III \u10e8\u10d4\u10e1.",
+            "search_display_name": "Asatiani Street III shes.",
+            "longitude": 42.69852,
+            "latitude": 42.258641,
+            "metro_stations": []
+        },
+        {
+            "id": 3872,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d0\u10d8\u10d0\u10dc\u10d8\u10e1 I \u10e8\u10d4\u10e1.",
+            "search_display_name": "Asatiani Street I shes.",
+            "longitude": 42.698481,
+            "latitude": 42.259258,
+            "metro_stations": []
+        },
+        {
+            "id": 3873,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 II \u10e8\u10d4\u10e1.",
+            "search_display_name": "Lado Asatiani Street II",
+            "longitude": 42.696679,
+            "latitude": 42.258204,
+            "metro_stations": []
+        },
+        {
+            "id": 3875,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 IV \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 IV \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 42.696513,
+            "latitude": 42.256609,
+            "metro_stations": []
+        },
+        {
+            "id": 3876,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 VI \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 VI \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 42.696023,
+            "latitude": 42.255959,
+            "metro_stations": []
+        },
+        {
+            "id": 3877,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 VII \u10e8\u10d4\u10e1.",
+            "search_display_name": "Asatiani Street VII shes.",
+            "longitude": 42.697674,
+            "latitude": 42.256033,
+            "metro_stations": []
+        },
+        {
+            "id": 3898,
+            "urban_id": null,
+            "district_id": 44,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8",
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8 \u10da. \u10db\u10d4-2 \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10da. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10db\u10d4-2 \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 42.697631,
+            "latitude": 42.260633,
+            "metro_stations": []
+        },
+        {
+            "id": 21924,
+            "urban_id": null,
+            "district_id": 37,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d1\u10d0\u10da\u10d0\u10ee\u10d5\u10d0\u10dc\u10d8",
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d0\u10d8\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "longitude": 42.696575,
+            "latitude": 42.255112,
+            "metro_stations": []
+        },
+        {
+            "id": 21971,
+            "urban_id": null,
+            "district_id": 38,
+            "city_id": 96,
+            "city_name": "\u10e5\u10e3\u10d7\u10d0\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": "\u10e1\u10e2\u10d4\u10d9\u10da\u10dd\u10e2\u10d0\u10e0\u10d0",
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "longitude": 42.696565,
+            "latitude": 42.255006,
+            "metro_stations": []
+        },
+        {
+            "id": 4473,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 73,
+            "city_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10db\u10d0\u10db\u10e3\u10d9\u10d0 \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10db\u10d0\u10db\u10e3\u10d9\u10d0 \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 45.010143,
+            "latitude": 41.548182,
+            "metro_stations": []
+        },
+        {
+            "id": 18294,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 73,
+            "city_name": "\u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 45.010709,
+            "latitude": 41.547224,
+            "metro_stations": []
+        },
+        {
+            "id": 21725,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 42,
+            "city_name": "\u10d7\u10d4\u10da\u10d0\u10d5\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 45.464642,
+            "latitude": 41.924117,
+            "metro_stations": []
+        },
+        {
+            "id": 21750,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 42,
+            "city_name": "\u10d7\u10d4\u10da\u10d0\u10d5\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d9. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d9. \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 45.477866,
+            "latitude": 41.912483,
+            "metro_stations": []
+        },
+        {
+            "id": 4929,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 2,
+            "city_name": "\u10d0\u10d1\u10d0\u10e8\u10d0",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.19471,
+            "latitude": 42.211134,
+            "metro_stations": []
+        },
+        {
+            "id": 19873,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 12,
+            "city_name": "\u10d0\u10ee\u10d0\u10da\u10ea\u10d8\u10ee\u10d4",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.99321,
+            "latitude": 41.643514,
+            "metro_stations": []
+        },
+        {
+            "id": 18098,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 19,
+            "city_name": "\u10d1\u10dd\u10da\u10dc\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.544272,
+            "latitude": 41.453741,
+            "metro_stations": []
+        },
+        {
+            "id": 18080,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 19,
+            "city_name": "\u10d1\u10dd\u10da\u10dc\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0\u10e1 \u10e9\u10d8\u10ee\u10d8 No. 1",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0\u10e1 \u10e9\u10d8\u10ee\u10d8 No. 1",
+            "longitude": 44.547497,
+            "latitude": 41.450962,
+            "metro_stations": []
+        },
+        {
+            "id": 18089,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 19,
+            "city_name": "\u10d1\u10dd\u10da\u10dc\u10d8\u10e1\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0\u10e1 \u10e9\u10d8\u10ee\u10d8 No. 2",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0\u10e1 \u10e9\u10d8\u10ee\u10d8 No. 2",
+            "longitude": 44.545553,
+            "latitude": 41.452814,
+            "metro_stations": []
+        },
+        {
+            "id": 21229,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 31,
+            "city_name": "\u10d2\u10e3\u10e0\u10ef\u10d0\u10d0\u10dc\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e9\u10d8\u10ee\u10d8",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e9\u10d8\u10ee\u10d8",
+            "longitude": 45.789706,
+            "latitude": 41.744065,
+            "metro_stations": []
+        },
+        {
+            "id": 21269,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 31,
+            "city_name": "\u10d2\u10e3\u10e0\u10ef\u10d0\u10d0\u10dc\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 45.788847,
+            "latitude": 41.743931,
+            "metro_stations": []
+        },
+        {
+            "id": 19235,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 47,
+            "city_name": "\u10d9\u10d0\u10e1\u10de\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 44.42554,
+            "latitude": 41.924816,
+            "metro_stations": []
+        },
+        {
+            "id": 21507,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 50,
+            "city_name": "\u10da\u10d0\u10d2\u10dd\u10d3\u10d4\u10ee\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 46.280125,
+            "latitude": 41.829383,
+            "metro_stations": []
+        },
+        {
+            "id": 6902,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 67,
+            "city_name": "\u10dd\u10d6\u10e3\u10e0\u10d2\u10d4\u10d7\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d9\u10d0\u10dc\u10d0",
+            "search_display_name": "Askana",
+            "longitude": 42.149101,
+            "latitude": 41.951427,
+            "metro_stations": []
+        },
+        {
+            "id": 8513,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 74,
+            "city_name": "\u10e1\u10d0\u10d2\u10d0\u10e0\u10d4\u10ef\u10dd",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d9\u10d8\u10da\u10d0\u10e3\u10e0\u10d8",
+            "search_display_name": "Askilauri",
+            "longitude": 45.172048,
+            "latitude": 41.862745,
+            "metro_stations": []
+        },
+        {
+            "id": 20960,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 81,
+            "city_name": "\u10e1\u10d4\u10dc\u10d0\u10d9\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.065667,
+            "latitude": 42.26967,
+            "metro_stations": []
+        },
+        {
+            "id": 20433,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 91,
+            "city_name": "\u10e4\u10dd\u10d7\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 41.671477,
+            "latitude": 42.133505,
+            "metro_stations": []
+        },
+        {
+            "id": 19699,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 106,
+            "city_name": "\u10ea\u10d0\u10d2\u10d4\u10e0\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10da\u10d0\u10d3\u10dd \u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.768571,
+            "latitude": 42.646196,
+            "metro_stations": []
+        },
+        {
+            "id": 19701,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 106,
+            "city_name": "\u10ea\u10d0\u10d2\u10d4\u10e0\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10db\u10d0\u10db\u10e3\u10d9\u10d0 \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10db\u10d0\u10db\u10e3\u10d9\u10d0 \u10d0\u10e1\u10da\u10d0\u10dc\u10d8\u10d9\u10d0\u10e8\u10d5\u10d8\u10da\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.772879,
+            "latitude": 42.649957,
+            "metro_stations": []
+        },
+        {
+            "id": 18489,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 119,
+            "city_name": "\u10ec\u10e7\u10d0\u10da\u10e2\u10e3\u10d1\u10dd",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.5963,
+            "latitude": 42.344138,
+            "metro_stations": []
+        },
+        {
+            "id": 19385,
+            "urban_id": null,
+            "district_id": null,
+            "city_id": 122,
+            "city_name": "\u10ee\u10d0\u10e8\u10e3\u10e0\u10d8",
+            "urban_name": null,
+            "district_name": null,
+            "display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10d0\u10d7\u10d8\u10d0\u10dc\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 43.589719,
+            "latitude": 41.993889,
+            "metro_stations": []
+        },
+        {
+            "id": 19923,
+            "urban_id": null,
+            "district_id": 3025,
+            "city_id": 203,
+            "city_name": "\u10d0\u10ee\u10d0\u10da\u10ea\u10d8\u10ee\u10d8\u10e1 \u10db\u10e3\u10dc\u10d8\u10ea\u10d8\u10de\u10d0\u10da\u10d8\u10e2\u10d4\u10e2\u10d8",
+            "urban_name": null,
+            "district_name": "\u10e0\u10d0\u10d1\u10d0\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5.",
+            "search_display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d0",
+            "longitude": 42.975872,
+            "latitude": 41.644361,
+            "metro_stations": []
+        },
+        {
+            "id": 2042,
+            "urban_id": null,
+            "district_id": 1738,
+            "city_id": 227,
+            "city_name": "\u10d7\u10d4\u10d7\u10e0\u10d8\u10ec\u10e7\u10d0\u10e0\u10dd\u10e1 \u10db\u10e3\u10dc\u10d8\u10ea\u10d8\u10de\u10d0\u10da\u10d8\u10e2\u10d4\u10e2\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10e3\u10e0\u10d4\u10d7\u10d8",
+            "display_name": "\u10d0\u10e1\u10e3\u10e0\u10d4\u10d7\u10d8 (\u10e3\u10db\u10d8\u10e1\u10d0\u10db\u10d0\u10e0\u10d7\u10dd \u10e5\u10e3\u10e9\u10d4\u10d1\u10d8)",
+            "search_display_name": "\u10e1\u10e3\u10e0\u10d4\u10d7\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d4\u10d1\u10d8",
+            "longitude": 44.67071,
+            "latitude": 41.588692,
+            "metro_stations": []
+        },
+        {
+            "id": 2457,
+            "urban_id": null,
+            "district_id": 287,
+            "city_id": 197,
+            "city_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10db\u10e3\u10dc\u10d8\u10ea\u10d8\u10de\u10d0\u10da\u10d8\u10e2\u10d4\u10e2\u10d8",
+            "urban_name": null,
+            "district_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d0",
+            "display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d0 (\u10e3\u10db\u10d8\u10e1\u10d0\u10db\u10d0\u10e0\u10d7\u10dd \u10e5\u10e3\u10e9\u10d4\u10d1\u10d8)",
+            "search_display_name": "\u10d0\u10e1\u10de\u10d8\u10dc\u10eb\u10d8\u10e1 \u10e5\u10e3\u10e9\u10d4\u10d1\u10d8",
+            "longitude": 43.256564,
+            "latitude": 41.573863,
+            "metro_stations": []
+        }
+    ]
+}

@@ -1510,12 +1510,27 @@ function fillLocationForm(address) {
 
   console.log('[Autofill] Filling location form with address:', address);
 
-  // Address is already transformed during scraping
-  const transformedAddress = address;
+  // If address contains a house number (e.g. "ასპინძის ქ. 5"), separate it:
+  //  - street part goes to the street field
+  //  - number part goes to the house-number field
+  let streetAddressPart = address;
+  let explicitHouseNumber = null;
+
+  // Look for a number token at the very end (optionally with trailing letter, e.g. "5ა")
+  const houseNumberMatchFull = address.match(/(\d+[ა-ჰA-Za-z\-\/0-9]*)\s*$/);
+  if (houseNumberMatchFull) {
+    explicitHouseNumber = houseNumberMatchFull[1];
+    streetAddressPart = address.slice(0, houseNumberMatchFull.index).trim();
+    console.log('[Autofill] Detected house number in address:', explicitHouseNumber, 'street part:', streetAddressPart);
+  }
+
+  // Address is already transformed during scraping, but we apply an extra
+  // normalization step to better match ss.ge street patterns (especially microdistricts)
+  const transformedAddress = normalizeStreetForSs(streetAddressPart);
   console.log('[Autofill] Using address:', transformedAddress);
 
   // Use the full transformed address for street (don't split)
-  const streetValue = transformedAddress.trim(); // e.g., "ა მიკრორაიონი - გლდანი"
+  let streetValue = transformedAddress.trim(); // e.g., "ა მიკრორაიონი - გლდანი"
   
   // Fill city dropdown (react-select) - default to "თბილისი"
   // If city is not present in scraped data, leave it as თბილისი (default)
@@ -1579,6 +1594,7 @@ function fillLocationForm(address) {
         
         // Type the street value character by character to trigger search
         let currentValue = '';
+        let triedSurnameFallback = false;
         const typeStreet = () => {
           if (currentValue.length < streetValue.length) {
             currentValue = streetValue.substring(0, currentValue.length + 1);
@@ -1636,8 +1652,25 @@ function fillLocationForm(address) {
                 console.log('[Autofill] Found matching street option:', matchingOption.textContent);
                 matchingOption.click();
               } else {
-                // Try pressing Enter to select first result
-                console.log('[Autofill] No match found, trying to select first option');
+                // If we didn't find a match, try a fallback by stripping leading initial
+                // Example: "ვ. კუპრაძის" -> "კუპრაძის"
+                if (!triedSurnameFallback) {
+                  const surnameCandidate = streetValue.replace(/^[ა-ჰ]\.\s+/, '');
+                  if (surnameCandidate && surnameCandidate !== streetValue) {
+                    triedSurnameFallback = true;
+                    console.log('[Autofill] No match, retrying with surname-only street value:', surnameCandidate);
+                    streetValue = surnameCandidate;
+                    currentValue = '';
+                    // Clear input before retry
+                    streetInput.value = '';
+                    streetInput.dispatchEvent(new Event('input', { bubbles: true }));
+                    setTimeout(typeStreet, 50);
+                    return;
+                  }
+                }
+
+                // Final fallback: press Enter to select first result if any
+                console.log('[Autofill] No match found, trying to select first option with Enter');
                 const enterEvent = new KeyboardEvent('keydown', {
                   key: 'Enter',
                   code: 'Enter',
@@ -1663,20 +1696,136 @@ function fillLocationForm(address) {
   // Fill house number (if available in address)
   const houseNumberInput = document.querySelector('input[name="house-number"]');
   if (houseNumberInput) {
-    // Try to extract house number from address
-    // Look for numbers in the original address
-    const houseNumberMatch = address.match(/(\d+)/);
-    if (houseNumberMatch) {
+    // Prefer the explicit house number we split out from the address, if any
+    let houseNumberToUse = explicitHouseNumber;
+
+    // Fallback: try to extract from the original address
+    if (!houseNumberToUse) {
+      const fallbackMatch = address.match(/(\d+)/);
+      if (fallbackMatch) {
+        houseNumberToUse = fallbackMatch[1];
+      }
+    }
+
+    if (houseNumberToUse) {
       setTimeout(() => {
-        houseNumberInput.value = houseNumberMatch[1];
+        houseNumberInput.value = houseNumberToUse;
         houseNumberInput.dispatchEvent(new Event('input', { bubbles: true }));
         houseNumberInput.dispatchEvent(new Event('change', { bubbles: true }));
-        console.log('[Autofill] Set house number:', houseNumberMatch[1]);
+        console.log('[Autofill] Set house number:', houseNumberToUse);
       }, 2500);
     }
   }
 
   console.log('[Autofill] Location form filling initiated');
+}
+
+/**
+ * Normalizes a myhome.ge-style street/address string so it better matches
+ * ss.ge street naming patterns.
+ *
+ * The idea is to take patterns like:
+ *   "თემქა- III მ/რ V კვარტ."
+ * and convert them into something closer to ss.ge's format:
+ *   "III მიკრორაიონი, V კვარტალი - თემქა"
+ *
+ * This function is intentionally conservative: if a pattern is not recognized,
+ * it simply returns the original address unchanged.
+ *
+ * @param {string} address
+ * @returns {string}
+ */
+function normalizeStreetForSs(address) {
+  if (!address || typeof address !== 'string') {
+    return address;
+  }
+
+  let normalized = address.trim();
+
+   // Pattern 0 (specific to ნუცუბიძის პლატო):
+  // "ნუცუბიძის პლ. II მ/რ. I კვარტ."
+  //   → "ნუცუბიძის II პლატო"
+  //
+  // - We only care about the microdistrict number (II) and map it to the plateau number.
+  // - The kvartal part is ignored for ss.ge, since its street list uses plateau names.
+  //
+  // Regex groups:
+  //   1: microdistrict Roman numeral (I, II, III, ...)
+  const nutsubidzePlatoRegex = /^ნუცუბიძის\s+პლ\.?\s*([IVX]+)\s*მ\/რ\.?\s*[IVX\d]+\s*კვარტ\.?$/i;
+  const nutsubidzeMatch = normalized.match(nutsubidzePlatoRegex);
+  if (nutsubidzeMatch) {
+    const mkrRoman = nutsubidzeMatch[1].trim(); // e.g. "II"
+    const result = `ნუცუბიძის ${mkrRoman} პლატო`;
+    console.log('[Autofill] Normalized ნუცუბიძის პლატო address:', normalized, '→', result);
+    return result;
+  }
+
+  // Pattern 1:
+  // "<district>- III მ/რ V კვარტ."
+  //   → "III მიკრორაიონი, V კვარტალი - <district>"
+  //
+  // - <district>  : any text before the dash (e.g. "თემქა")
+  // - III         : Roman numeral for microdistrict (I, II, III, IV, V, VI, VII, VIII, IX, X ...)
+  // - მ/რ         : abbreviation for "მიკრორაიონი"
+  // - V           : Roman numeral or digit(s) for quarter
+  // - კვარტ.      : abbreviation for "კვარტალი"
+  //
+  // We keep the Roman numerals as they are – ss.ge also uses them.
+  const mkrKvRegex = /^(.+?)\s*-\s*([IVX]+)\s*მ\/რ\s*([IVX\d]+)\s*კვარტ\.?$/i;
+  const mkrKvMatch = normalized.match(mkrKvRegex);
+  if (mkrKvMatch) {
+    const rawDistrict = mkrKvMatch[1].trim();  // e.g. "თემქა"
+    const mkrRoman   = mkrKvMatch[2].trim();   // e.g. "III"
+    const kvartToken = mkrKvMatch[3].trim();   // e.g. "V"
+
+    const district = rawDistrict.replace(/\s+/, ' ');
+
+    const result = `${mkrRoman} მიკრორაიონი, ${kvartToken} კვარტალი - ${district}`;
+    console.log('[Autofill] Normalized microdistrict address:', normalized, '→', result);
+    return result;
+  }
+
+  // Future patterns for other microdistrict formats can be added here in a
+  // similar way, always returning early when a pattern matches.
+
+  // --- Generic street-name normalization rules ---
+  // These handle patterns like:
+  //  - "ასპინძის I ქ."          -> "ასპინძის"
+  //  - "ასკანის II ჩიხი"        -> "ასკანის"
+  //  - "ასათიანი ლ. I შეს."     -> "ასათიანი ლ."
+  //  - "ასათიანი გ. ქ."         -> "გ. ასათიანის ქ." (handled by more specific rules later)
+
+  let s = normalized;
+
+  // Normalize "შეს." -> "შესახვევი" to reduce variants
+  s = s.replace(/\bშეს\.\b/gi, ' შესახვევი ');
+
+  // Strip Roman numerals used for branch numbering (I, II, III, IV, ...)
+  // when they appear right before a type word like ქ./ქუჩა/ჩიხი/შესახვევი/შეს.
+  // Examples:
+  //   "ასპინძის I ქ."            -> "ასპინძის ქ."
+  //   "ასკანის II ჩიხი"          -> "ასკანის ჩიხი"
+  //   "13 ასურელი მამის I შეს."  -> "13 ასურელი მამის შეს."
+  s = s.replace(/\s+[IVX]+\s+(?=(ქ\.?|ქუჩა|ჩიხი|შესახვევი|შეს\.?)\b)/gi, ' ');
+
+  // For many branched streets on ss.ge, only the base street is present in the list.
+  // Drop the street-type suffix entirely so we search by the base name:
+  //   "ასპინძის ქ."      -> "ასპინძის"
+  //   "ასკანის ჩიხი"     -> "ასკანის"
+  //   "ასათიანი ლ. ქ."   -> "ასათიანი ლ."
+  s = s.replace(/\s+(ქ\.?|ქუჩა|გამზ\.?|ჩიხი|ჩ\.|შესახვევი|შეს\.?)$/i, '');
+
+  // Remove trailing commas / periods and collapse spaces
+  s = s.replace(/[,\.\s]+$/g, '');
+  s = s.replace(/\s+/g, ' ').trim();
+
+  if (s) {
+    console.log('[Autofill] Normalized generic street address:', normalized, '→', s);
+    return s;
+  }
+
+  // No known pattern matched – return original
+  return normalized;
 }
 
 /**
