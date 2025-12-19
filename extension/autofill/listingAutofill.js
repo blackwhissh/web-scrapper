@@ -546,6 +546,72 @@ function fillAreaField(propertyDetails) {
 }
 
 /**
+ * Fills the price field
+ * @param {Object} propertyDetails - Property details from scraped data
+ */
+function fillPriceField(propertyDetails) {
+  const price = propertyDetails?.['ფასი'];
+  if (price === undefined || price === null) {
+    return;
+  }
+
+  const priceValue = price.toString();
+
+  // Prefer USD input (right-hand, $) inside the price container
+  const priceContainer = document.querySelector('#create-app-price > div.sc-c963185b-2.fuFvYb') ||
+                         document.querySelector('#create-app-price');
+
+  const fillInputValue = (targetInput) => {
+    targetInput.value = priceValue;
+    targetInput.dispatchEvent(new Event('input', { bubbles: true }));
+    targetInput.dispatchEvent(new Event('change', { bubbles: true }));
+  };
+
+  if (priceContainer) {
+    const labels = Array.from(priceContainer.querySelectorAll('label'));
+
+    // Prefer label whose child contains "$"
+    let usdLabel = labels.find(label =>
+      Array.from(label.querySelectorAll('*')).some(node => (node.textContent || '').includes('$'))
+    );
+    if (!usdLabel && labels.length >= 2) {
+      usdLabel = labels[1]; // assume right-hand label is USD
+    }
+
+    if (usdLabel) {
+      usdLabel.click();
+
+      let attempts = 0;
+      const tryActive = () => {
+        const activeUsdInput = priceContainer.querySelector('label.active input[type="text"]');
+        attempts += 1;
+        if (activeUsdInput) {
+          console.log('[Autofill] Price active USD input found on attempt', attempts);
+          fillInputValue(activeUsdInput);
+          return;
+        }
+        if (attempts < 4) {
+          setTimeout(tryActive, 120);
+        } else {
+          const fallbackInput = usdLabel.querySelector('input[type="text"]') || usdLabel.querySelector('input');
+          if (fallbackInput) {
+            console.log('[Autofill] Price fallback using USD label input');
+            fillInputValue(fallbackInput);
+          } else {
+            console.warn('[Autofill] USD input not found after retries');
+          }
+        }
+      };
+
+      tryActive();
+      return;
+    }
+  }
+
+  console.warn('[Autofill] Price USD label/input not found');
+}
+
+/**
  * Fills the floor field
  * @param {Object} propertyDetails - Property details from scraped data
  */
@@ -609,6 +675,124 @@ function fillTotalFloorField(propertyDetails) {
 }
 
 /**
+ * Fills the project type field (პროექტის ტიპი)
+ * @param {Object} propertyDetails - Property details from scraped data
+ * @param {Object} additionalParameters - Additional parameters from scraped data
+ */
+function fillProjectTypeField(propertyDetails, additionalParameters) {
+  const projectValue = propertyDetails?.['პროექტის ტიპი'] ||
+                       propertyDetails?.['type_of_project'] ||
+                       propertyDetails?.['ProjectType'] ||
+                       additionalParameters?.['პროექტის ტიპი'] ||
+                       additionalParameters?.['type_of_project'] ||
+                       additionalParameters?.['ProjectType'];
+
+  if (!projectValue) {
+    console.log('[Autofill] No project type value found for project type field');
+    return;
+  }
+
+  const normalizeText = (value) => (value || '').toString().trim().toLowerCase();
+  const projectText = normalizeText(projectValue);
+
+  const findProjectTypeContainer = () => {
+    // Primary selector provided by the UI structure
+    const direct = document.querySelector('#create-app-details > div.sc-e8a87f7a-0.dMKNFB > div:nth-child(9)');
+    if (direct) return direct;
+
+    // Fallback: same structure but allow hashed class name variations
+    const detailsRoot = document.querySelector('#create-app-details');
+    if (detailsRoot) {
+      const hashed = detailsRoot.querySelector('div.sc-e8a87f7a-0.dMKNFB > div:nth-child(9)') ||
+                     detailsRoot.querySelector('div[class*="sc-e8a87f7a-0"] > div:nth-child(9)');
+      if (hashed) return hashed;
+    }
+
+    // Fallback: locate by label text and climb to the nearest container
+    const labelEl = Array.from(document.querySelectorAll('span, p, div')).find(el => {
+      const text = (el.textContent || '').trim();
+      return text.includes('პროექტის ტიპი');
+    });
+
+    if (labelEl) {
+      const labeledContainer = labelEl.closest('.sc-e8a87f7a-0, .sc-e8a87f7a-1, [class*="sc-e8a87f7a-0"], [class*="sc-e8a87f7a-1"], .dMKNFB, [class*="dMKNFB"]');
+      if (labeledContainer) return labeledContainer;
+      if (labelEl.parentElement) return labelEl.parentElement;
+    }
+
+    // Fallback: search within the details section for any div containing the label text
+    if (detailsRoot) {
+      const candidate = Array.from(detailsRoot.querySelectorAll('div')).find(div => {
+        const text = (div.textContent || '').trim();
+        return text.includes('პროექტის ტიპი');
+      });
+      if (candidate) return candidate;
+    }
+
+    // Last resort: document-wide search for a container that mentions the label
+    return Array.from(document.querySelectorAll('div[class*="sc-e8a87f7a-0"], div[class*="dMKNFB"]')).find(div => {
+      const text = (div.textContent || '').trim();
+      return text.includes('პროექტის ტიპი');
+    }) || null;
+  };
+
+  const projectContainer = findProjectTypeContainer();
+
+  if (projectContainer) {
+    const optionDivs = projectContainer.querySelectorAll('div[class*="sc-9e0391b6-0"], div[class*="yrPxb"], div[role="button"], button, p');
+    let matchingOption = Array.from(optionDivs).find(option => {
+      const text = normalizeText(option.textContent);
+      return text === projectText || text.includes(projectText) || projectText.includes(text);
+    });
+
+    if (!matchingOption) {
+      // Try any clickable element inside the container
+      const clickableCandidates = projectContainer.querySelectorAll('div, button');
+      matchingOption = Array.from(clickableCandidates).find(option => {
+        const text = normalizeText(option.textContent);
+        const isClickable = window.getComputedStyle(option).cursor === 'pointer' ||
+                            option.onclick !== null ||
+                            option.getAttribute('role') === 'button';
+        return isClickable && text && (text === projectText || text.includes(projectText) || projectText.includes(text));
+      });
+    }
+
+    if (matchingOption) {
+      console.log('[Autofill] Found project type option:', matchingOption.textContent.trim());
+      matchingOption.click();
+      const changeEvent = new Event('change', { bubbles: true });
+      projectContainer.dispatchEvent(changeEvent);
+      return;
+    }
+
+    console.warn('[Autofill] Could not find project type option for:', projectValue);
+  }
+
+  // Fallback: try traditional input/select field
+  const projectField = findFieldByLabel('პროექტის ტიპი');
+  if (projectField) {
+    console.log('[Autofill] Fallback filling project type via input/select');
+    if (projectField.tagName === 'SELECT') {
+      const option = Array.from(projectField.options).find(opt => {
+        const text = normalizeText(opt.textContent);
+        return text === projectText || text.includes(projectText) || projectText.includes(text);
+      });
+      if (option) {
+        projectField.value = option.value;
+        projectField.dispatchEvent(new Event('change', { bubbles: true }));
+        return;
+      }
+    }
+
+    projectField.value = projectValue;
+    projectField.dispatchEvent(new Event('input', { bubbles: true }));
+    projectField.dispatchEvent(new Event('change', { bubbles: true }));
+  } else {
+    console.warn('[Autofill] Project type container/field not found');
+  }
+}
+
+/**
  * Fills the location (address) field
  * @param {Object} propertyDetails - Property details from scraped data
  */
@@ -643,52 +827,65 @@ function fillRemainingFields(propertyDetails, furniture, additionalParameters) {
   
   // Order: rooms, bedrooms, area, floor, total floor, bathroom, status, condition, other info, description
   
-  // 1. Rooms field
+  // 1. Price
+  fillPriceField(propertyDetails);
+
+  // 2. Rooms field
   fillRoomsField(propertyDetails);
   
-  // 2. Bedrooms field
+  // 3. Bedrooms field
   setTimeout(() => {
     fillBedroomField(propertyDetails);
   }, 300);
   
-  // 3. Area field
+  // 4. Area field
   setTimeout(() => {
     fillAreaField(propertyDetails);
   }, 600);
   
-  // 4. Floor field
+  // 5. Floor field
   setTimeout(() => {
     fillFloorField(propertyDetails);
   }, 900);
   
-  // 5. Total floor numbers
+  // 6. Total floor numbers
   setTimeout(() => {
     fillTotalFloorField(propertyDetails);
   }, 1200);
   
-  // 6. Bathroom field - with retry mechanism
+  // 7. Project type field (პროექტის ტიპი)
+  setTimeout(() => {
+    fillProjectTypeField(propertyDetails, additionalParameters);
+  }, 1500);
+
+  // 8. Bathroom field - with retry mechanism
   setTimeout(() => {
     fillBathroomFieldWithRetry(propertyDetails, additionalParameters);
   }, 2000);
   
-  // 7. Status field (სტატუსი)
+  // 9. Status field (სტატუსი)
   setTimeout(() => {
     fillStatusField(propertyDetails, additionalParameters);
   }, 1800);
   
-  // 8. Condition field (მდგომარეობა) - might be separate from status
+  // 10. Condition field (მდგომარეობა) - might be separate from status
   setTimeout(() => {
     fillConditionField(propertyDetails, additionalParameters);
   }, 2100);
   
-  // 9. Other information (additional parameters, furniture)
+  // 11. Other information (additional parameters, furniture)
   setTimeout(() => {
     fillOtherInformation(additionalParameters, furniture);
   }, 2400);
   
-  // 10. Description
+  // 12. Short description (მოკლე აღწერა) – fill if available
   setTimeout(() => {
-    fillDescription(propertyDetails);
+    fillShortDescription(propertyDetails);
+  }, 2600);
+
+  // 13. Description (explicit selector first, then fallback)
+  setTimeout(() => {
+    fillDescriptionExplicit(propertyDetails, additionalParameters);
   }, 2700);
   
   console.log('[Autofill] Remaining fields filling initiated');
@@ -930,6 +1127,72 @@ function fillDescription(propertyDetails) {
 }
 
 /**
+ * Fills the main description textarea using the explicit selector if available
+ * @param {Object} propertyDetails - Property details from scraped data
+ * @param {Object} additionalParameters - Additional parameters from scraped data
+ */
+function fillDescriptionExplicit(propertyDetails, additionalParameters) {
+  // Prefer the short description for the textarea, fallback to full description
+  const description = propertyDetails?.['მოკლე აღწერა'] ||
+                     propertyDetails?.shortDescription ||
+                     propertyDetails?.['description'] ||
+                     propertyDetails?.['აღწერა'] ||
+                     propertyDetails?.['დეტალები'];
+
+  if (!description) {
+    return;
+  }
+
+  // Explicit selector provided by user for ss.ge description field
+  const explicitField = document.querySelector('#create-app-desc > div.sc-c285bd07-2.fASXuL > textarea');
+  if (explicitField) {
+    explicitField.value = description;
+    explicitField.dispatchEvent(new Event('input', { bubbles: true }));
+    explicitField.dispatchEvent(new Event('change', { bubbles: true }));
+    return;
+  }
+
+  // Fallback to existing fillDescription if explicit selector not found
+  fillDescription(propertyDetails, additionalParameters);
+}
+
+/**
+ * Fills the short description field (მოკლე აღწერა) if present
+ * @param {Object} propertyDetails - Property details from scraped data
+ */
+function fillShortDescription(propertyDetails) {
+  const shortDesc = propertyDetails?.['მოკლე აღწერა'] ||
+                    propertyDetails?.shortDescription ||
+                    propertyDetails?.['description'] ||
+                    propertyDetails?.['აღწერა'];
+
+  if (!shortDesc) {
+    return;
+  }
+
+  const selectors = [
+    'textarea[placeholder*="მოკლე"]',
+    'textarea[name*="short"]',
+    'textarea[id*="short"]',
+    'input[placeholder*="მოკლე"]',
+    'input[name*="short"]',
+    '#create-edit-translation-block textarea',
+  ];
+
+  let field = null;
+  for (const selector of selectors) {
+    field = document.querySelector(selector);
+    if (field) break;
+  }
+
+  if (field) {
+    field.value = shortDesc;
+    field.dispatchEvent(new Event('input', { bubbles: true }));
+    field.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+}
+
+/**
  * Fills the bedroom field - called separately with delay to ensure form has rendered
  * @param {Object} propertyDetails - Property details from scraped data
  */
@@ -1134,15 +1397,24 @@ function fillBathroomField(propertyDetails, additionalParameters) {
   // Find the container by looking for the label "სველი წერტილი"
   let bathroomContainer = null;
   
-  // Strategy 1: Find span with the label text, then get its parent container
-  const labelSpan = Array.from(document.querySelectorAll('span')).find(span => {
+  // Strategy 0: Direct container by provided structure
+  const directContainer = Array.from(document.querySelectorAll('div.sc-e8a87f7a-1.bilVxg')).find(div => {
+    const label = div.querySelector('span.sc-6e54cb25-19.cHrSsJ');
+    return label && (label.textContent || '').includes('სველი წერტილი');
+  });
+  if (directContainer) {
+    bathroomContainer = directContainer;
+  }
+
+  // Strategy 1: Find span with the label text, then get its parent container (only if not found yet)
+  const labelSpan = bathroomContainer ? null : Array.from(document.querySelectorAll('span')).find(span => {
     const text = (span.textContent || '').trim();
     return text === 'სველი წერტილი' || text.includes('სველი წერტილი') || text.includes('სვ.წერტილი');
   });
   
   console.log('[Autofill] Label span found:', !!labelSpan);
   
-  if (labelSpan) {
+  if (!bathroomContainer && labelSpan) {
     // Find the parent container with class sc-e8a87f7a-1 bilVxg (same structure as rooms/bedrooms)
     bathroomContainer = labelSpan.closest('.sc-e8a87f7a-1, [class*="sc-e8a87f7a-1"], [class*="bilVxg"]');
     console.log('[Autofill] Container found via closest():', !!bathroomContainer);

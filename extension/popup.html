@@ -9,10 +9,93 @@
   <body>
     <main class="container">
       <h1 class="title">Real Estate Assistant</h1>
-      <div class="actions">
+      <section class="actions">
         <button id="scrapeButton" class="primary">Scrape Page</button>
         <button id="autofillButton" class="secondary">Autofill</button>
-      </div>
+        <button id="viewResultsButton" class="secondary">View Scraped Results</button>
+      </section>
+
+      <section class="search-section">
+        <h2 class="section-title">Search Listings</h2>
+        <form id="searchForm" class="search-form">
+          <label class="field">
+            <span class="field-label">მდებარეობა (City)</span>
+            <input
+              id="cityInput"
+              type="text"
+              placeholder="მაგ: თბილისი"
+              autocomplete="off"
+            />
+          </label>
+
+          <label class="field">
+            <span class="field-label">გარიგების ტიპი (Deal Type)</span>
+            <select id="dealTypeSelect">
+              <option value="">აირჩიე...</option>
+              <option value="sell">იყიდება</option>
+              <option value="rent">ქირავდება</option>
+            </select>
+          </label>
+
+          <div class="field field-inline">
+            <label>
+              <span class="field-label">ფასი მინ.</span>
+              <input
+                id="priceMinInput"
+                type="number"
+                min="0"
+                step="100"
+                placeholder="0"
+              />
+            </label>
+            <label>
+              <span class="field-label">ფასი მაქს.</span>
+              <input
+                id="priceMaxInput"
+                type="number"
+                min="0"
+                step="100"
+                placeholder="100000"
+              />
+            </label>
+          </div>
+
+          <div class="field field-checkboxes">
+            <span class="field-label">გამორიცხვა (Exclude):</span>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input
+                  id="excludeSVipInput"
+                  type="checkbox"
+                />
+                <span>S-VIP</span>
+              </label>
+              <label class="checkbox-label">
+                <input
+                  id="excludeVipInput"
+                  type="checkbox"
+                />
+                <span>VIP</span>
+              </label>
+            </div>
+          </div>
+
+          <label class="field">
+            <span class="field-label">მაქს. სიახლეები (Max Listings)</span>
+            <input
+              id="maxListingsInput"
+              type="number"
+              min="1"
+              step="1"
+              placeholder="No limit"
+            />
+          </label>
+
+          <button id="searchButton" type="submit" class="primary full-width">
+            Search
+          </button>
+        </form>
+      </section>
       <p id="status" class="status">Ready.</p>
     </main>
     <script type="module" src="popup.js"></script>

@@ -1,8 +1,17 @@
-export function scrapeListingFromDom(mappings = {}) {
+function scrapeListingFromDom(mappings = {}) {
   const FALLBACK_DESCRIPTION_SELECTORS = [
     ".description",
     ".listing-description",
     "[data-testid='listing-description']",
+  ];
+
+  const FALLBACK_SHORT_DESCRIPTION_SELECTORS = [
+    "[data-testid='short-description']",
+    ".short-description",
+    ".listing-short-description",
+    "section [class*='short'][class*='description']",
+    "div.relative.w-full.p-5.pb-3.mt-4.bg-white.border.rounded-2xl.border-gray-20 .text-sm",
+    "div.relative.w-full.p-5.pb-3.mt-4.bg-white.border.rounded-2xl.border-gray-20"
   ];
 
   // Fallback selectors if mappings are not available
@@ -260,6 +269,97 @@ export function scrapeListingFromDom(mappings = {}) {
   };
 
   /**
+   * Extracts the "მოკლე აღწერა" (short description) section
+   * Looks for heading text and reads the adjacent text content
+   * @returns {string|null}
+   */
+  const collectShortDescription = () => {
+    // Explicit deep selector provided (targeting the inner description div)
+    const explicitPath = document.querySelector("#__next > div.pt-0.md\\:pt-8.pb-8.md\\:pb-12.bg-white.md\\:bg-\\[rgb\\(251\\,251\\,251\\)\\] > div > div.grid.items-start.grid-cols-12.gap-5.mt-0.md\\:mt-3 > div.col-span-12.lg\\:col-span-9 > div.px-4.md\\:px-6.lg\\:px-0 > div.relative.w-full.p-5.pb-3.mt-4.bg-white.border.md\\:p-6.rounded-2xl.border-gray-20.md\\:mt-5 > div > div > div > div");
+    if (explicitPath) {
+      const text = (explicitPath.textContent || '').trim();
+      if (text && text !== 'მოკლე აღწერა') {
+        return text;
+      }
+    }
+
+    const extractFromContainer = (container, headingText) => {
+      if (!container) return null;
+
+      // Prefer a dedicated text block
+      const textBlock = container.querySelector('.text-sm');
+      // In myhome layout the actual text sits in the innermost div under .text-sm
+      const innerBlock = textBlock?.querySelector('div') || textBlock;
+      if (innerBlock?.textContent?.trim()) {
+        return innerBlock.textContent.trim();
+      }
+
+      // Otherwise, aggregate text excluding the heading text
+      const texts = [];
+      container.querySelectorAll('p, span, div').forEach(el => {
+        const t = (el.textContent || '').trim();
+        if (!t) return;
+        if (headingText && t === headingText) return;
+        texts.push(t);
+      });
+      return texts.length ? texts.join(' ') : null;
+    };
+
+    // Try direct container selectors first to avoid capturing heading-only text
+    const directContainers = document.querySelectorAll(
+      'div.relative.w-full.p-5.pb-3.mt-4.bg-white.border.rounded-2xl.border-gray-20'
+    );
+    for (const container of Array.from(directContainers)) {
+      const headingEl = container.querySelector('h3, h2, h4, span, div');
+      const headingText = headingEl ? (headingEl.textContent || '').trim() : null;
+      if (headingText && headingText.trim() === 'მოკლე აღწერა') {
+        // Use text after heading
+        const textAfterHeading = Array.from(container.querySelectorAll('p, span, div'))
+          .map(el => (el.textContent || '').trim())
+          .filter(t => t && t !== headingText);
+        if (textAfterHeading.length) {
+          return textAfterHeading.join(' ');
+        }
+      }
+      const extracted = extractFromContainer(container, headingText);
+      if (extracted && extracted !== 'მოკლე აღწერა') return extracted;
+    }
+
+    // Try simpler direct selectors (if they point at a text node rather than heading)
+    const direct = getFirstTextMatch(FALLBACK_SHORT_DESCRIPTION_SELECTORS);
+    if (direct && direct.trim() !== 'მოკლე აღწერა') return direct;
+
+    // Look for a heading that contains "მოკლე აღწერა"
+    const heading = Array.from(document.querySelectorAll('h2, h3, h4, span, div')).find(el => {
+      const text = (el.textContent || '').trim();
+      return text.includes('მოკლე აღწერა');
+    });
+
+    if (heading) {
+      const container = heading.closest('div.relative.w-full.p-5.pb-3.mt-4.bg-white.border') ||
+                        heading.closest('div, section, article') ||
+                        heading.parentElement;
+
+      const pulled = extractFromContainer(container, heading.textContent.trim());
+      if (pulled) return pulled;
+
+      // Fallback: use the next sibling that has text
+      let sibling = heading.nextElementSibling;
+      let depth = 0;
+      while (sibling && depth < 3) {
+        const text = (sibling.textContent || '').trim();
+        if (text && !text.includes('მოკლე აღწერა')) {
+          return text;
+        }
+        sibling = sibling.nextElementSibling;
+        depth++;
+      }
+    }
+
+    return null;
+  };
+
+  /**
    * Extracts furniture items from the "ავეჯი" section
    * Looks for the container div and extracts all values as a list
    * @returns {Array<string>} Array of furniture item names
@@ -435,6 +535,7 @@ export function scrapeListingFromDom(mappings = {}) {
   const furnitureItems = collectFurnitureItems();
   const propertyDetails = collectPropertyDetails();
   const dealType = detectDealType();
+  const shortDescription = collectShortDescription();
 
   /**
    * Transforms address format from "გლდანი - ა მ/რ" to "ა მიკრორაიონი - გლდანი"
@@ -475,6 +576,66 @@ export function scrapeListingFromDom(mappings = {}) {
     propertyDetails['მისამართი'] = transformAddress(address);
   }
 
+  /**
+   * Parses a price string containing currency symbols and various separators.
+   * Handles formats like "105,000", "105.000", "105,000.50", "105.000,50", "105 000 ₾".
+   */
+  const parsePriceText = (text) => {
+    if (!text) return null;
+
+    // Keep only digits and separators, drop currency and other symbols/spaces
+    let value = text.replace(/[\s\u00A0]/g, '').replace(/[^\d.,]/g, '');
+    if (!value) return null;
+
+    const hasComma = value.includes(',');
+    const hasDot = value.includes('.');
+
+    // Helper to parse after replacements
+    const toNumber = (str) => {
+      const num = parseFloat(str);
+      return isNaN(num) ? null : num;
+    };
+
+    if (hasComma && hasDot) {
+      // Decide decimal separator by the rightmost separator
+      if (value.lastIndexOf('.') > value.lastIndexOf(',')) {
+        // Comma as thousands, dot as decimal: 105,000.50
+        return toNumber(value.replace(/,/g, ''));
+      }
+      // Dot as thousands, comma as decimal: 105.000,50
+      return toNumber(value.replace(/\./g, '').replace(',', '.'));
+    }
+
+    if (hasComma) {
+      const parts = value.split(',');
+      const last = parts[parts.length - 1];
+      if (last.length === 3 && parts.length > 1) {
+        // Comma used as thousands separator
+        return toNumber(value.replace(/,/g, ''));
+      }
+      if (last.length <= 2) {
+        // Comma used as decimal separator
+        return toNumber(value.replace(',', '.'));
+      }
+      // Fallback: remove commas
+      return toNumber(value.replace(/,/g, ''));
+    }
+
+    if (hasDot) {
+      const parts = value.split('.');
+      const last = parts[parts.length - 1];
+      if (last.length === 3 && parts.length > 1) {
+        // Dot used as thousands separator
+        return toNumber(value.replace(/\./g, ''));
+      }
+      // Dot as decimal separator
+      return toNumber(value);
+    }
+
+    // Only digits remaining
+    return toNumber(value);
+  };
+
   // Extract price and add to propertyDetails
   const priceText = getFirstTextMatch([
     "[data-testid='listing-price']",
@@ -482,15 +643,16 @@ export function scrapeListingFromDom(mappings = {}) {
   ]);
   
   if (priceText) {
-    // Remove the last symbol and convert to number
-    const priceWithoutLastSymbol = priceText.trim().slice(0, -1);
-    // Remove any spaces and non-numeric characters except decimal point
-    const cleanedPrice = priceWithoutLastSymbol.replace(/[^\d.,]/g, '').replace(',', '.');
-    const priceNumber = parseFloat(cleanedPrice);
-    
-    if (!isNaN(priceNumber)) {
+    const priceNumber = parsePriceText(priceText);
+    if (priceNumber !== null) {
       propertyDetails['ფასი'] = priceNumber;
     }
+  }
+
+  // Add short description if available
+  if (shortDescription) {
+    propertyDetails['მოკლე აღწერა'] = shortDescription;
+    propertyDetails.shortDescription = shortDescription;
   }
 
   return {
@@ -503,3 +665,16 @@ export function scrapeListingFromDom(mappings = {}) {
     dealType: dealType,
   };
 }
+
+// Make function available globally when injected as file (must be before export)
+// This code runs when the file is injected into a page context
+if (typeof window !== 'undefined') {
+  window.scrapeListingFromDom = scrapeListingFromDom;
+  console.log('[scraper-file] scrapeListingFromDom attached to window');
+}
+
+// Export for ES modules (when imported)
+// Note: This will cause an error when file is injected, but the function
+// is already on window, so execution should continue
+export { scrapeListingFromDom };
+
